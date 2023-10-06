@@ -1,0 +1,34 @@
+.post_container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.post_container img{
+    max-width: 90%;
+}
+.post_container .text{
+    max-width: 600px;
+    text-align: justify;
+}
+.post_container h3{
+    margin-bottom: .2em;
+}
+.post_container .tags{
+    display: flex;
+    justify-content: center;
+}
+.post_container .tags p{
+    margin-right: 1em;
+}
+.post_container .tags p span{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .post_container .text{
+        max-width: 85%;
+        text-align: justify;
+    }
+}

@@ -1,0 +1,16 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+.profile .box_info img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 1px solid var(--light);
+}
+.profile .box_info a:hover{
+    color: var(--gray);
+}

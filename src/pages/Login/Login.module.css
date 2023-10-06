@@ -1,0 +1,18 @@
+.login{
+    text-align: center;
+}
+.login p {
+    color: var(--gray);
+}
+.loading_btn{
+    animation: spinner 2s linear infinite;
+    color: var(--ligth);
+}
+@keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

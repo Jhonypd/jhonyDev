@@ -1,0 +1,32 @@
+.create_post{
+    text-align: center;
+}
+.create_post h2{
+    font-size: 2.2em;
+}
+.create_post p {
+    color: var(--gray);
+    margin-bottom: 2em;
+}
+.create_post form{
+    margin-bottom: 2em;
+}
+.loading_btn{
+    animation: spinner 2s linear infinite;
+    color: var(--ligth);
+}
+@keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}

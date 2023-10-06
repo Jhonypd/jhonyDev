@@ -1,0 +1,37 @@
+.loading_box{
+    height: 100vh;
+    width: 100%;
+}
+.loading_box .box{
+    background-color: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading_box .box svg{
+    color: var(--primary);
+    height: 6em;
+    width: 6em;
+    position: absolute;
+    top: 50%;
+    right: auto;
+}
+.loading_box .box .loading_animation{
+    animation: spinnerLoading 2s infinite linear;
+}
+
+@keyframes spinnerLoading {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}

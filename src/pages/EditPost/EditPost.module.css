@@ -1,0 +1,54 @@
+.edit_post {
+    text-align: center;
+}
+
+.edit_post h2 {
+    font-size: 2.2em;
+}
+
+.edit_post p {
+    color: var(--gray);
+    margin-bottom: 2em;
+}
+
+.edit_post form {
+    margin-bottom: 2em;
+}
+
+.loading_btn {
+    animation: spinner 2s linear infinite;
+    color: var(--ligth);
+}
+
+.edit_post .preview_title {
+    margin-bottom: .2em;
+    color: #000000;
+    font-weight: bold;
+}
+
+.edit_post .image_preview {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .edit_post {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    form{
+        max-width: 90%;
+    }
+}

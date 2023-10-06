@@ -1,0 +1,76 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home .search_form{
+    max-width: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.home .search_form label{
+    flex-direction: row;
+    width: 50%;
+    height: 2.8em;
+}
+.home .search_form label button{
+    border-radius: 0 120px 120px 0;
+    padding: 0;
+}
+.home .search_form label{
+    margin: 0;
+}
+.home .search_form label svg{
+    height: 2em;
+    width: 2em;
+}
+.home .search_form input{
+    margin-right: 10px;
+    width: 100%;
+    padding: 0 1em;
+}
+.box_posts{
+    max-width: 100%;
+}
+.home .noposts{
+    text-align: center;
+}
+.home .noposts p{
+    margin-bottom: 1.5em;
+}
+.home .noposts a {
+    padding: 10px 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .home .search_form{
+        width: 100%;
+    }
+    .home h1{
+        font-size: 1.5em;
+        margin: 1em 0;
+    }
+    .home .search_form label{
+        flex-direction: row;
+        width: 90%;
+        height: 2.8em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .home .search_form{
+        width: 100%;
+    }
+    .home h1{
+        font-size: 1.5em;
+        margin: 1em 0;
+    }
+    .home .search_form label{
+        flex-direction: row;
+        width: 90%;
+        height: 2.8em;
+    }
+}
